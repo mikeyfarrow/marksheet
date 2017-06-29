@@ -1,3 +1,7 @@
+# Note from mikeyfarrow
+
+The full website is in the ``_site/`` directory. Site is generated using [Jekyll](https://jekyllrb.com/).
+
 # [Marksheet](http://marksheet.io): a free HTML and CSS tutorial
 
 [![Marksheet screenshot](https://raw.github.com/jgthms/marksheet/master/images/marksheet-free-html-css-tutorial.png)](http://marksheet.io)
