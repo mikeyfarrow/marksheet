@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html class="route- route-post section-css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <title>CSS Color units - Free tutorial to learn HTML and CSS</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="fonts/source-sans-pro.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/css/ie.css" />
+  <![endif]-->
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://marksheet.io">
+  <meta property="og:title" content="A free tutorial to learn HTML and CSS">
+  <meta property="og:description" content="MarkSheet is a free tutorial to learn HTML and CSS. It's short (just as long as a 50 page book), simple (for everyone: beginners, designers, developers), and free (as in 'free beer' and 'free speech'). It consists of 50 lessons across 4 chapters, covering the Web, HTML5, CSS3, and Sass.">
+  <meta property="og:site_name" content="MarkSheet">
+  <meta property="og:image" content="images/marksheet-banner.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="fb:app_id" content="470761896424893">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jgthms">
+  <meta name="twitter:creator" content="@jgthms">
+  <meta name="twitter:title" content="MarkSheet: a free tutorial to learn HTML and CSS">
+  <meta name="twitter:image" content="/images/marksheet-banner.png">
+  <meta name="twitter:description" content="MarkSheet is a free tutorial to learn HTML and CSS. It's short (just as long as a 50 page book), simple (for everyone: beginners, designers, developers), and free (as in 'free beer' and 'free speech'). It consists of 50 lessons across 4 chapters, covering the Web, HTML5, CSS3, and Sass.">
+</head>
+
+
+<body>
+    <div class="page-hero"></div>
+    <div class="page-body">
+        <header class="page-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      MarkSheet
+    </a>
+  </div>
+</header>
+ <main class="page-container">
+  <section class="heading">
+    <div class="container">
+      <h1>
+        <em>4.7</em>
+        CSS <strong>Color</strong> units
+      </h1>
+      <h2>Different ways to define <strong>colors</strong></h2>
+    </div>
+  </section>
+
+  <div class="page-content">
+    <div class="container">
+      <div class="breadcrumb-holder">
+        <header id="breadcrumb" class="breadcrumb">
+          <a id="open" class="breadcrumb-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <span class="breadcrumb-section">
+            
+              <i class="fa fa-css3"></i>
+            
+            css
+          </span>
+
+          
+            <a class="breadcrumb-next" href="css-size-units.html">
+              <i class="fa fa-angle-right"></i>
+              <span>Next article</span>
+            </a>
+          
+
+          
+            <a class="breadcrumb-previous" href="css-priority.html">
+              <i class="fa fa-angle-left"></i>
+              <span>Previous article</span>
+            </a>
+          
+        </header>
+      </div>
+
+      <nav id="menu" class="menu">
+        <ul></ul>
+      </nav>
+
+      <article class="content">
+        <p><strong>Colors</strong> are widely used in CSS, whether for text color, background color, gradients, shadows, borders… There are several ways to define colors in CSS, each with their own pros and cons.</p>
+
+<p>The <code class="highlighter-rouge">color</code> property defines the color of the <strong>text</strong>. It is pretty straightforward. What is more important is the different types of <strong>color units</strong> available.</p>
+
+<h3 id="color-names">Color names</h3>
+
+<p>CSS provides <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">145 colors names</a>, from the most basic (black, white, orange, yellow, blue…) to the more specific (lawngreen, orchid, crimson…).</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span><span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;}</span>
+<span class="nt">a</span><span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;}</span></code></pre></figure>
+
+<p>Because the color names are hard to remember, and because you probably want very specific colors, color names are not often used.</p>
+
+<h3 id="rgb">rgb</h3>
+
+<p>Computer monitors, TVs, mobile phones, all use the RGB color model to display colors. Basically, each color is defined by a combination of Red, Green, and Blue. There are 256 possible values for Red, Green or Blue. Because computers start counting at 0 (zero), the maximum value is 255.</p>
+
+<p>Considering a color is the result of a <em>combination</em> of Red, Green and Blue, and because each of these 3 colors have 256 possible values, there are <code class="highlighter-rouge">256 * 256 * 256 = 16,777,216</code> possible colors available.</p>
+
+<p>Because the RGB model is directly related to how colors are <em>physically</em> rendered, it has become a CSS color unit.</p>
+
+<p>For example, the red color of this website is 219 amounts of Red, 78 of Green, and 68 of Blue:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">a</span><span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">219</span><span class="p">,</span> <span class="m">78</span><span class="p">,</span> <span class="m">68</span><span class="p">);}</span></code></pre></figure>
+
+<p>The black color is no amount of either Red, Green or Blue:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span><span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">);}</span></code></pre></figure>
+
+<p>On the other side of the spectrum, white is the full amount of each Red, Green and Blue:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span><span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">);}</span></code></pre></figure>
+
+<h3 id="rgba">rgba</h3>
+
+<p>The <code class="highlighter-rouge">rgba</code> color unit is <code class="highlighter-rouge">rgb</code> to which we add an <strong>alpha</strong> value (ranging from 0 to 1, in decimal values), which defines how transparent the color is:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span><span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.8</span><span class="p">);}</span></code></pre></figure>
+
+<p class="info">A slightly transparent black color.</p>
+
+<p>The purpose of a color being transparent is to blend with the background, and consequently look slightly different depending on the context. It is particularly useful for <strong>background colors</strong>.</p>
+
+<h3 id="hsl-and-hsla">hsl and hsla</h3>
+
+<p><strong>HSL</strong> is another way to define a color. Think of it as a <strong>color wheel</strong>.</p>
+
+<figure>
+<img src="images/hsl-model.png" alt="HSL model" />
+<figcaption>
+Source: <a href="https://en.wikipedia.org/wiki/HSL_and_HSV#/media/File:Hsl-hsv_models.svg/">Wikipedia</a>
+</figcaption>
+</figure>
+
+<p>Instead of a color being a combination of Red, Green and Blue, you define:</p>
+
+<ul>
+  <li>the <strong>Hue</strong> a value ranging from 0 to 360, defines <em>which color</em> you want.</li>
+  <li>the <strong>Saturation</strong> percentage, ranging from 0% to 100%, defines <em>how much</em> of that color you want.</li>
+  <li>the <strong>Lightness</strong> percentage, ranging from 0% to 100%, defines <em>how bright</em> you want that color to be.</li>
+</ul>
+
+<p>Again, the red color of this website is defined this way in HSL:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">a</span><span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">hsl</span><span class="p">(</span><span class="m">4</span><span class="p">,</span> <span class="m">68%</span><span class="p">,</span> <span class="m">56%</span><span class="p">);}</span></code></pre></figure>
+
+<p><code class="highlighter-rouge">4</code> indicates it’s red
+<code class="highlighter-rouge">68%</code> indicates the red is quite prominent
+<code class="highlighter-rouge">56%</code> indicates it’s halfway between black and white</p>
+
+<p>The <code class="highlighter-rouge">hsl</code> color unit is easier to understand than <code class="highlighter-rouge">rgb</code> because the expected result is clearer. You basically define a color in 3 separate steps, and can play around with each value to come up with the color you want. If you want a yellow shade, you can start with a value like <code class="highlighter-rouge">hsl(50, 68%, 56%)</code>, and alter the Saturation and Lightness value to find the specific shade you’re looking for.</p>
+
+<p>I consider <code class="highlighter-rouge">hsl</code> to be <strong>human-readable</strong>, whereas <code class="highlighter-rouge">rgb</code> is more <strong>computer-readable</strong>.</p>
+
+<p><code class="highlighter-rouge">hsla</code> is the same as <code class="highlighter-rouge">hsl</code>, with the added value of being able to define an <strong>alpha</strong> value:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span><span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="n">hsla</span><span class="p">(</span><span class="m">4</span><span class="p">,</span> <span class="m">68%</span><span class="p">,</span> <span class="m">56%</span><span class="p">,</span> <span class="m">0.5</span><span class="p">);}</span></code></pre></figure>
+
+<p class="info">A transparent red color.</p>
+
+<h3 id="hexadecimal">Hexadecimal</h3>
+
+<p>Colors in CSS can also be defined with <strong>hexadecimal values</strong>, like <code class="highlighter-rouge">#db4e44</code>.</p>
+
+<p>To understand what hexadecimal values are, let’s look at how binary and decimal work:</p>
+
+<div class="table">
+  <table>
+    <tr>
+      <th>
+        binary
+        <em>2 possible values</em>
+      </th>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>
+        decimal
+        <em>10 possible values</em>
+      </th>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>
+        hexadecimal
+        <em>16 possible values</em>
+      </th>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>A</td>
+      <td>B</td>
+      <td>C</td>
+      <td>D</td>
+      <td>E</td>
+      <td>F</td>
+    </tr>
+  </table>
+</div>
+
+<p>Consider the 0-9 numbers and the A-F letters as <strong>symbols</strong>.</p>
+
+<p>Humans use the <strong>decimal</strong> system. We have 10 symbols to form numbers.</p>
+
+<p>In <strong>hexadecimal</strong>, we have 16 symbols to form numbers. Because 0-9 are not enough symbols, we also use A-F. And it starts at zero. So:</p>
+
+<ul>
+  <li>the number <code class="highlighter-rouge">4</code> in hexadecimal is <code class="highlighter-rouge">4</code></li>
+  <li>the number <code class="highlighter-rouge">12</code> in hexadecimal is <code class="highlighter-rouge">C</code></li>
+  <li>the number <code class="highlighter-rouge">16</code> in hexadecimal is <code class="highlighter-rouge">10</code> because after you’ve run out of symbols (the last one being <code class="highlighter-rouge">F</code>), you add a second symbol to the left and increment (<code class="highlighter-rouge">0</code> becomes <code class="highlighter-rouge">1</code>) and the right one starts over (from <code class="highlighter-rouge">F</code> to <code class="highlighter-rouge">0</code>)</li>
+</ul>
+
+<h4 id="do-i-have-to-remember-this">Do I have to remember this?</h4>
+
+<p>Not at all! It is here to provide an explanation of how hexadecimal values work. The most important thing to remember is that there are 16 hexadecimal symbols.</p>
+
+<p>Just like RGB, a hexadecimal color value is a combination of Red, Green, and Blue, each of them being represent as a hexadecimal value, like <code class="highlighter-rouge">DB</code> for Red, <code class="highlighter-rouge">4E</code> for Green, and <code class="highlighter-rouge">44</code> for Blue.</p>
+
+<p>Because Red, Green or Blue can only have 2 symbols, their possible values are <code class="highlighter-rouge">16 * 16 = 256</code>, which mirrors the RGB color unit!</p>
+
+<h4 id="why-not-use-rgb-then">Why not use RGB then?</h4>
+
+<p>Usually, when choosing colors, you <strong>don’t write</strong> them directly. You either use a color picker, or copy/paste it from Photoshop, or choose a <a href="http://www.colourlovers.com/palettes">colour palette</a> somewhere.</p>
+
+<p>Hexadecimal values are easier to <strong>copy and paste</strong>, as they only comprise 6 characters.</p>
+
+<p><img src="images/photoshop-color-picker.png" alt="Photoshop one field for hex" /></p>
+
+<h4 id="it-is-easier-to-copy-paste-a-single-field-than-3-separate-ones">It is easier to copy paste a single field than 3 separate ones.</h4>
+
+<p>In CSS, you only need to prepend a hexadecimal color value with a hash <code class="highlighter-rouge">#</code>.</p>
+
+<h3 id="which-one-to-pick">Which one to pick?</h3>
+
+<p>If you don’t intend to use any transparent color, stick to <strong>hexadecimal</strong> values, as they are easier to copy/paste and don’t take much space in your code.</p>
+
+<p>If you want some transparency, convert your color from hex to rgba, and use the <code class="highlighter-rouge">rgba</code> color unit.</p>
+
+<p>If you want to play around with your color directly in the browser, try <code class="highlighter-rouge">hsl</code>.</p>
+
+      </article>
+
+      <nav class="pagination">
+        
+          <a class="pagination-previous" href="css-priority.html">
+            <em>&larr; Previous</em>
+            <strong>CSS <strong>Priority</strong></strong>
+          </a>
+        
+
+        
+          <a class="pagination-next" href="css-size-units.html">
+            <em>Next &rarr;</em>
+            <strong>CSS <strong>Size</strong> units</strong>
+          </a>
+        
+      </nav>
+    </div>
+  </div>
+</main>
+
+<a id="top" class="elevator">
+  <i class="fa fa-angle-up"></i>
+  <span>Back to top</span>
+</a>
+
+    </div>
+    <!-- <section id="newsletter" class="page-newsletter">
+  <div class="container">
+    <div class="page-newsletter-heading">
+      <span class="icons">
+        <i class="fa fa-television"></i>
+        <i class="fa fa-play-circle"></i>
+      </span>
+      <h3>
+        MarkSheet <strong>Video</strong> tutorials are coming!
+      </h3>
+      <p>
+        <strong>Sign up</strong> for the MarkSheet <strong>newsletter</strong> to get notified!
+      </p>
+    </div>
+
+    <div class="page-newsletter-form">
+      <form action="https://api.moonmail.io//lists/citirp4aw000001ozgpmfoyub/subscribe" method="post" id="mm-embedded-form" novalidate="">
+        <input type="hidden" name="u" value="Z29vZ2xlLW9hdXRoMnwxMDA5MTUyMjkyODA2NTg2MTA2ODY">
+        <div class="page-newsletter-group">
+          <div class="mm-field">
+            <input class="page-newsletter-input" type="email" id="mm-email" name="email" required="" placeholder="Email address">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <button class="page-newsletter-button" type="submit">Subscribe</button>
+        </form>
+      </form>
+    </div>
+  </div>
+</section> -->
+ <footer id="footer" class="page-footer">
+  <footer class="container">
+<!--     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="GSADMWUPJMCUJ">
+      <p>
+        <strong>MarkSheet</strong> is <strong>free</strong> and <strong>always</strong> will be.
+        <em>If this website has been valuable to you, please consider making a donation.</em>
+      </p>
+      <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+    </form> -->
+
+    <p>
+      <strong xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">MarkSheet</strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jgthms.com/" property="cc:attributionName" rel="cc:attributionURL">Jeremy Thomas</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 International License</a>.
+    </p>
+    <p>
+      The underlying source code used to format and display this website is licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT license</a>.
+    </p>
+    <p>
+      Powered by
+      <a href="http://jekyllrb.com/">Jekyll</a>.
+      Hosted on
+      <a href="https://github.com/jgthms/marksheet">GitHub</a>.
+    </p>
+  </footer>
+</footer>
+ 
+    <div id="overlay" class="page-overlay"></div>
+    <div class="page-menu">
+        <section class="toc-component">
+  <div class="container">
+    <article class="toc-section toc-section--web">
+      <div class="toc-heading">
+        <i class="fa fa-globe"></i>
+        <h3>
+          <a href="introduction.html">Web</a>
+        </h3>
+        <small>
+          <span>3</span> lessons
+        </small>
+        <em>
+          For absolute <strong>beginners</strong>
+        </em>
+      </div>
+      <ol class="toc-content">
+        
+          
+          
+            
+            
+              <li class="toc-month">
+                <a href="introduction.html">
+                  <em>01</em>
+                  Introduction
+                </a>
+              </li>
+              
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="internet.html" >
+                  The <strong>Internet</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="web.html" >
+                  The <strong>World Wide Web</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="browser.html" >
+                  A Web <strong>browser</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      </ol>
+    </article>
+
+    <article class="toc-section toc-section--html5">
+      <div class="toc-heading">
+        <i class="fa fa-html5"></i>
+        <h3>
+          <a href="html-basics.html">HTML 5</a>
+        </h3>
+        <small>
+          <span>13</span> lessons
+        </small>
+        <em>
+          For <strong>designers</strong> willing to start coding right away
+        </em>
+      </div>
+      <ol class="toc-content">
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+            
+              <li class="toc-month">
+                <a href="html-basics.html">
+                  <em>02</em>
+                  HTML Basics
+                </a>
+              </li>
+              
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-syntax.html" >
+                  HTML <strong>Syntax</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-block-inline.html" >
+                  HTML <strong>Block</strong> and <strong>Inline</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-hierarchy.html" >
+                  HTML <strong>Hierarchy</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-semantics.html" >
+                  HTML <strong>Semantics</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-formatting.html" >
+                  HTML <strong>Formatting</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-valid-document.html" >
+                  A <strong>valid</strong> HTML document
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li class="toc-month">
+                <a href="html-content.html">
+                  <em>03</em>
+                  HTML Content
+                </a>
+              </li>
+              
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-text.html" >
+                  HTML <strong>Text</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-inline-semantics.html" >
+                  <strong>Inline</strong> semantics
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-links.html" >
+                  HTML <strong>Links</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-images.html" >
+                  HTML <strong>Images</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-tables.html" >
+                  HTML <strong>Tables</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-structure.html" >
+                  HTML <strong>Structure</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="html-forms.html" >
+                  HTML <strong>Forms</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      </ol>
+    </article>
+
+    <article class="toc-section toc-section--css3">
+      <div class="toc-heading">
+        <i class="fa fa-css3"></i>
+        <h3>
+          <a href="css-basics.html">CSS 3</a>
+        </h3>
+        <small>
+          <span>29</span> lessons
+        </small>
+        <em>
+          For <strong>developers</strong> eager to learn how CSS can define the style and layout of a webpage
+        </em>
+      </div>
+      <ol class="toc-content">
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+            
+              <li class="toc-month">
+                <a href="css-basics.html">
+                  <em>04</em>
+                  CSS Basics
+                </a>
+              </li>
+              
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="why-css-exists.html" >
+                  <strong>Why</strong> CSS exists
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-syntax.html" >
+                  CSS <strong>Syntax</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-selectors.html" >
+                  CSS <strong>Selectors</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-inheritance.html" >
+                  CSS <strong>Inheritance</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-priority.html" >
+                  CSS <strong>Priority</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-color-units.html"  class="active">
+                  CSS <strong>Color</strong> units
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-size-units.html" >
+                  CSS <strong>Size</strong> units
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-reset.html" >
+                  CSS <strong>Reset</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li class="toc-month">
+                <a href="css-text.html">
+                  <em>05</em>
+                  CSS Text
+                </a>
+              </li>
+              
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-font-family.html" >
+                  CSS <strong>font-family</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-font-size-style-weight.html" >
+                  CSS <strong>font properties</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-line-height.html" >
+                  CSS <strong>line-height</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-font-shorthand.html" >
+                  CSS <strong>font</strong> shorthand
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-text-properties.html" >
+                  CSS <strong>text</strong> properties
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li class="toc-month">
+                <a href="css-box-model.html">
+                  <em>06</em>
+                  CSS Box Model
+                </a>
+              </li>
+              
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-background.html" >
+                  CSS <strong>background</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-display.html" >
+                  CSS <strong>display</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-height-width-overflow.html" >
+                  CSS <strong>height</strong> and <strong>width</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-border.html" >
+                  CSS <strong>border</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-padding.html" >
+                  CSS <strong>padding</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-margin.html" >
+                  CSS <strong>margin</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-size-shorthand-wheel.html" >
+                  CSS <strong>size</strong> shorthand <strong>wheel</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li class="toc-month">
+                <a href="css-positioning.html">
+                  <em>07</em>
+                  CSS Positioning
+                </a>
+              </li>
+              
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-the-flow.html" >
+                  The <strong>Flow</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-position.html" >
+                  CSS <strong>position</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-float-clear.html" >
+                  CSS <strong>float</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li class="toc-month">
+                <a href="css-advanced.html">
+                  <em>08</em>
+                  Advanced CSS
+                </a>
+              </li>
+              
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-pseudo-classes.html" >
+                  CSS <strong>pseudo-classes</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-gradients.html" >
+                  CSS <strong>gradients</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-transitions.html" >
+                  CSS <strong>transitions</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-animations.html" >
+                  CSS <strong>animations</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-transform.html" >
+                  CSS <strong>transform</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="css-responsiveness.html" >
+                  CSS <strong>responsiveness</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      </ol>
+    </article>
+
+    <article class="toc-section toc-section--sass">
+      <div class="toc-heading">
+        <i class="fa fa-rocket"></i>
+        <h3>
+          <a href="sass.html">Sass</a>
+        </h3>
+        <small>
+          <span>5</span> lessons
+        </small>
+        <em>
+          For the <strong>smart and lazy</strong>
+        </em>
+      </div>
+      <ol class="toc-content">
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+            
+              <li class="toc-month">
+                <a href="sass.html">
+                  <em>09</em>
+                  Sass
+                </a>
+              </li>
+              
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="sass-scss-less.html" >
+                  <strong>Sass</strong> vs <strong>SCSS</strong> vs <strong>Less</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="sass-variables.html" >
+                  Sass <strong>variables</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="sass-nesting.html" >
+                  Sass <strong>nesting</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="sass-mixins.html" >
+                  Sass <strong>mixins</strong>
+                </a>
+              </li>
+            
+          
+        
+          
+          
+            
+            
+              <li>
+                <a href="sass-extend.html" >
+                  Sass <strong>extend</strong>
+                </a>
+              </li>
+            
+          
+        
+      </ol>
+    </article>
+  </div>
+</section>
+
+    </div>
+    <div id="close" class="page-close">
+        <a class="page-close-button">
+          Close
+        </a>
+    </div>
+     <script type="text/javascript" src="javascript/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="javascript/codemirror.js"></script>
+<script type="text/javascript" src="javascript/mode/xml/xml.js"></script>
+<script type="text/javascript" src="javascript/mode/htmlmixed/htmlmixed.js"></script>
+
+<script type="text/javascript" src="javascript/marksheet.js"></script>
+
+
+  <script type="text/javascript" src="javascript/affix.js"></script>
+  <script type="text/javascript" src="javascript/post.js"></script>
+
+
+<!-- <script async type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Source+Sans+Pro:400,300,700,400italic,700italic:latin', 'Source+Code+Pro::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script> -->
+
+<script async src="javascript/mm-embedded-form.js"></script>
+
+</body>
+
+</html>
