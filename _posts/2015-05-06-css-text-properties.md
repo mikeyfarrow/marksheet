@@ -76,7 +76,7 @@ blockquote{ text-indent: 30px;}
   <blockquote style="text-indent: 30px;">People always make the mistake of thinking art is created for them. But really, art is a private language for sophisticates to congratulate themselves on their superiority to the rest of the world. As my artist’s statement explains, my work is utterly incomprehensible and is therefore full of deep significance.</blockquote>
 </div>
 
-Notice how only the **first line** is indented. If you want to offset the whole block of text, use [paddings](/css-padding.html).
+Notice how only the **first line** is indented. If you want to offset the whole block of text, use [paddings](css-padding.html).
 
 As for the `font-size` property, you can use `px`, `em`, or even `%` values.
 {: .info}

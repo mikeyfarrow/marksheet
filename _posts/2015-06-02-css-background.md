@@ -14,7 +14,7 @@ Backgrounds are only applied on the targeted element. But considering most HTML 
 Default value: `transparent`
 Inherited by children elements: no.
 
-As we've already covered the different ways to define a [color in CSS](/css-color-units.html), applying a background color is straightforward:
+As we've already covered the different ways to define a [color in CSS](css-color-units.html), applying a background color is straightforward:
 
 {% highlight css %}
 body{ background: #f2eee9;}
@@ -53,7 +53,7 @@ CSS also allows to define **color gradients** as background images, in 2 differe
 * `linear-gradient` for gradients in a single direction, in a rectangular shape
 * `radial-gradient` for gradients in all directions, in a circular shape
 
-We cover that in a chapter 8.3: [CSS gradients](/css-gradients.html). The only thing to know for now is that background gradients are considered as **background images**:
+We cover that in a chapter 8.3: [CSS gradients](css-gradients.html). The only thing to know for now is that background gradients are considered as **background images**:
 
 {% highlight css %}
 body{ background-image: linear-gradient(white, grey);}

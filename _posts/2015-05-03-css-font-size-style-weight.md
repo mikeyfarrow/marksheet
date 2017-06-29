@@ -7,7 +7,7 @@ section: css
 
 ### font-size
 
-We've already covered **[CSS size units](/css-size-units.html)**, which are used to set the font size among other things.
+We've already covered **[CSS size units](css-size-units.html)**, which are used to set the font size among other things.
 
 {% highlight css %}
 p{ font-size: 16px;}

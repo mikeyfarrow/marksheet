@@ -34,7 +34,7 @@ The only difference between an opening and closing tag is the **slash** `/`{:.la
 
 When you combine an opening tag, a closing tag, and everything in between, you obtain an **HTML element**. The whole line is an HTML element that uses the HTML tags `<p>`{:.language-html} and `</p>`{:.language-html}.
 
-If you [view this sample in your browser](/html/sample-paragraph.html), you'll notice that **HTML tags are not displayed** by the browser. They are only _read_ by the browser to know what _type_ of **content** you've written.
+If you [view this sample in your browser](html/sample-paragraph.html), you'll notice that **HTML tags are not displayed** by the browser. They are only _read_ by the browser to know what _type_ of **content** you've written.
 
 ### Where to write HTML
 

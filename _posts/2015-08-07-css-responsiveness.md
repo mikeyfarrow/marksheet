@@ -26,7 +26,7 @@ browser
 viewport
 : the region within the browser that actually displays the webpage 
 
-![Difference between a device, a browser, and a viewport](/images/device-browser-viewport.png)
+![Difference between a device, a browser, and a viewport](images/device-browser-viewport.png)
 
 ### Responsive web design
 
@@ -47,7 +47,7 @@ Up until now, every part of our CSS was used by _every_ device that accessed our
 
 We need to write **blocks** in our CSS that will only be used by devices that match that block's criterias. These blocks are called **media queries**.
 
-The media query syntax is reminiscent of the [animation keyframes syntax](/css-animations.html#keyframes), as it defines **a block within the CSS**, in which you write additional CSS rules _that are only applied in certain cases_.
+The media query syntax is reminiscent of the [animation keyframes syntax](css-animations.html#keyframes), as it defines **a block within the CSS**, in which you write additional CSS rules _that are only applied in certain cases_.
 
 {% highlight css %}
 /* This part is read by every device/viewport */
@@ -180,7 +180,7 @@ What role does CSS play here? Well, higher resolution screens will render text v
 The problem is with **images** on Retina displays for example. It's a long topic, so read this ["CSS Techniques for Retina Displays" article on sitepoint](http://www.sitepoint.com/css-techniques-for-retina-displays/).
 
 <figure markdown="1">
-![Image density in CSS](/images/image-density-in-css.png)
+![Image density in CSS](images/image-density-in-css.png)
 <figcaption markdown="1">
 Source: [sitepoint.com](http://www.sitepoint.com/css-techniques-for-retina-displays/)
 </figcaption>
@@ -209,7 +209,7 @@ Usually, you want to focus on the full width **desktop** version first, as it fe
 
 But designing the **mobile** version first is actually _easier_ considering a **["HTML is almost 100% responsive out of the box"](http://fluidity.sexy/)**. Most web designs on mobile are only focusing on vertical layouts, with no or very few columns, because scrolling is **natural** on mobile devices.
 
-Using [the Flow](/css-the-flow.html) is straightforward to design a mobile site: just order your HTML elements in the way you want them to be displayed. Simply by writing your HTML code, you're _already designing your mobile website_. Header first, menu afterwards, then your content, and a footer at the end. _Voilà_!
+Using [the Flow](css-the-flow.html) is straightforward to design a mobile site: just order your HTML elements in the way you want them to be displayed. Simply by writing your HTML code, you're _already designing your mobile website_. Header first, menu afterwards, then your content, and a footer at the end. _Voilà_!
 
 A mobile-first CSS would use `min-width` media queries in order to apply specific rules for larger viewports:
 

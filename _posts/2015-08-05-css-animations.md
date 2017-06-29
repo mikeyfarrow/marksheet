@@ -126,7 +126,7 @@ It can not start with a number or two dashes.
 
 ### animation-duration
 
-Just like [transition durations](/css-transitions.html#transition-duration), animation durations can be set in **seconds** `1s` or **milliseconds** `200ms`.
+Just like [transition durations](css-transitions.html#transition-duration), animation durations can be set in **seconds** `1s` or **milliseconds** `200ms`.
 
 {% highlight css %}
 .selector{ animation-duration: 0.5s;}
@@ -136,7 +136,7 @@ It defaults to `0s`, which means no animation at all.
 
 ### animation-timing-function
 
-Just like [transition timing functions](/css-transitions.html#transition-timing-function), animation timing functions can use **keywords** like `linear`, `ease-out`, or be defined using custom **cubic bezier** functions.
+Just like [transition timing functions](css-transitions.html#transition-timing-function), animation timing functions can use **keywords** like `linear`, `ease-out`, or be defined using custom **cubic bezier** functions.
 
 {% highlight css %}
 .selector{ animation-timing-function: ease-in-out;}
@@ -149,7 +149,7 @@ Because CSS animations use keyframes, you can set a **linear** timing function a
 
 ### animation-delay
 
-Just like [transition delays](/css-transitions.html#transition-delay), animation delays can be set in **seconds** `1s` or **milliseconds** `200ms`.
+Just like [transition delays](css-transitions.html#transition-delay), animation delays can be set in **seconds** `1s` or **milliseconds** `200ms`.
 
 It defaults to `0s`, which means no delay at all.
 

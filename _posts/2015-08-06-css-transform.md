@@ -19,7 +19,7 @@ CSS **transforms** are a collection of _functions_ that allow to **shape element
 There are 3 CSS transform properties available:
 
 * `transform` defines which transform _function_ to use (translate, rotate, scale...)
-* `transform-origin` allows to modify the origin point of a transformation (works like [background positions](/css-background.html#background-position))
+* `transform-origin` allows to modify the origin point of a transformation (works like [background positions](css-background.html#background-position))
 * `transform-style` is for 3d settings
 
 Note that unlike `background` and `border`, `transform` is **not a shorthand property**.
@@ -37,9 +37,9 @@ The `translate()` function allows to move an element **across the plane** (on th
 * **1 parameter**: moves the element along the `x` axis
 * **2 parameters**: first value is for the `x` axis, second for the `y` one
 
-It's like using [relative positioning](/css-position.html#relative) with `left` and `top` values.
+It's like using [relative positioning](css-position.html#relative) with `left` and `top` values.
 
-Let's redo our [circuit animation](/css-animations.html#result-2) using translation instead of left/top positioning:
+Let's redo our [circuit animation](css-animations.html#result-2) using translation instead of left/top positioning:
 
 {% highlight css %}
 @keyframes translating {

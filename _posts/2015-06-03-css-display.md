@@ -5,7 +5,7 @@ subtitle: "Changing the <strong>type</strong> of an HTML element"
 section: css
 ---
 
-We've seen how there are mainly [2 types of HTML elements](/html-block-inline.html): **block-level** elements and **inline** ones. We've also mentioned a few alternatives, like **list-item** or **table-cell**.
+We've seen how there are mainly [2 types of HTML elements](html-block-inline.html): **block-level** elements and **inline** ones. We've also mentioned a few alternatives, like **list-item** or **table-cell**.
 
 The `display` property allows to change the _type_ of HTML element. By default, a paragraph `<p>` (a **block-level** element) will have a default `display` value of `block`, but can be rendered as an **inline** one:
 

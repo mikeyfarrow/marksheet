@@ -152,7 +152,7 @@ By default:
 
 #### start position
 
-The **start position** works like **[background positions](/css-background.html#background-position)**. You set it with the `at` keyword.
+The **start position** works like **[background positions](css-background.html#background-position)**. You set it with the `at` keyword.
 
 {% highlight css %}
 div{ background-image: radial-gradient(at top right, black, lightgrey); padding: 1rem; width: 300px;}

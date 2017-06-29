@@ -28,7 +28,7 @@ Because `strong` and `em` appear _within_ the `.title` rule (between the 2 curly
 
 ### Nesting purpose
 
-Because [CSS priority](/css-priority.html) can be tricky, it's common to use be **specific** when writing selectors, by combining multiple classes/tags to prevent CSS rules to cancel each other out.
+Because [CSS priority](css-priority.html) can be tricky, it's common to use be **specific** when writing selectors, by combining multiple classes/tags to prevent CSS rules to cancel each other out.
 
 {% highlight css %}
 .description{}
@@ -88,7 +88,7 @@ You can go even further by replacing `& p` and `& table` with `&` to create **ne
 }
 {% endhighlight %}
 
-Remember **[HTML nesting](/html-hierarchy.html)**? The indentation in Sass allows to _replicate_ how HTML elements are nested.
+Remember **[HTML nesting](html-hierarchy.html)**? The indentation in Sass allows to _replicate_ how HTML elements are nested.
 
 Notice how we only wrote `table` and `.empty` **once** for example.
 

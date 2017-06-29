@@ -10,7 +10,7 @@ published: false
 
 Let's say you have a solar eclipse picture on your computer, it will show up as:
 
-![Solar Eclipse](/images/solar-eclipse.jpg)
+![Solar Eclipse](images/solar-eclipse.jpg)
 
 * the **name** of the file is `solar-eclipse`
 * the **extension** of the file is `.jpg`

@@ -21,7 +21,7 @@ This line doesn't do anything apart from **defining** a variable, in our case a 
 
 <div style="background: #fce473; display: inline-block; padding: 10px; vertical-align: top;">#fce473</div>
 
-We can then use it throughout our CSS, whenever a [color unit](/css-color-units.html) is required:
+We can then use it throughout our CSS, whenever a [color unit](css-color-units.html) is required:
 
 {% highlight scss %}
 .quote{ border-left: 5px solid $yellow;}

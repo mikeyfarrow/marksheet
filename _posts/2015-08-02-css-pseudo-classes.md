@@ -5,7 +5,7 @@ subtitle: "Enhancing the CSS <strong>selectors</strong>"
 section: css
 ---
 
-We've seen how there are mainly [3 types of CSS selectors](/css-selectors.html):
+We've seen how there are mainly [3 types of CSS selectors](css-selectors.html):
 
 * **generic** where `p` in CSS targets `<p>` HTML elements
 * **classes** where `.intro` in CSS targets HTML elements with a `class="intro"` attribute
@@ -68,7 +68,7 @@ a:visited{ color: rebeccapurple;}
   <a href="https://twitter.com">Twitter</a>
   <a href="https://www.facebook.com">Facebook</a>
   <a href="https://www.mozilla.org">Mozilla</a>
-  <a href="/html/visited.html">MarkSheet</a>
+  <a href="html/visited.html">MarkSheet</a>
 </div>
 
 Applying a different for visited links is often overlooked but comes in handy for users browsing a list of results. It easily helps them visualize where they have already been.
@@ -91,7 +91,7 @@ The `outline: none;` rule removes the glow from the input.
 
 ### :first-child and :last-child
 
-These pseudo-classes are related to the **[HTML hierarchy](/html-hierarchy.html)**. They target HTML elements depending on the **order** in which they appear in the code.
+These pseudo-classes are related to the **[HTML hierarchy](html-hierarchy.html)**. They target HTML elements depending on the **order** in which they appear in the code.
 
 {% highlight html %}
 <ul>

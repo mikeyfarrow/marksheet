@@ -11,7 +11,7 @@ Sass mixins are **CSS functions** that you can **include** whenever you want.
 
 ### Syntax
 
-Remember how we wrote `@keyframes` when creating **[CSS animations](/css-animations.html)**? The Sass mixin syntax is fairly similar:
+Remember how we wrote `@keyframes` when creating **[CSS animations](css-animations.html)**? The Sass mixin syntax is fairly similar:
 
 {% highlight scss %}
 @mixin overlay() {

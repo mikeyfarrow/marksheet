@@ -117,7 +117,7 @@ There are 2 differences:
 * The `@extend` rule **doesn't** have parameters. Mixins do.
 * The `@extend` rule **does** combine selectors. Mixins don't.
 
-Let's reuse our [overlay mixin](/sass-mixins.html#syntax), and also write a `.small-uppercase` rule:
+Let's reuse our [overlay mixin](sass-mixins.html#syntax), and also write a `.small-uppercase` rule:
 
 {% highlight scss %}
 // scss
